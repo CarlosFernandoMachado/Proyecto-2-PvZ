@@ -4,11 +4,11 @@
 
 using std::string;
 
-class Papa : public Planta{
-	int escudo;
+class Cherry : public Planta{
+	bool doubledmg;
 public:
-	Papa(int=150,int=200,int=25,int=200);
-	virtual ~Papa();
+	Cherry(int=50,int=100,int=50,bool=true);
+	virtual ~Cherry();
 	virtual int ataque();
 	virtual int defensa(int);
 	virtual int getcosto();

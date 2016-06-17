@@ -39,7 +39,7 @@ int Papa::getcosto(){
 }
 string Papa::descripcion(){
 	stringstream ss;
-	ss << "Papa PA\nHP: 200\nDano: 25\nCosto: 150\nEscudo: 200\nEscudo bloquea dano";
+	ss << "Papa PA\nHP: 200\nDano: 25\nCosto: 150\nEscudo: 200";
 	return ss.str();
 }
 string Papa::tostring(){

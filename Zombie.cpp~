@@ -32,7 +32,7 @@ int Zombie::getcosto(){
 }
 string Zombie::descripcion(){
 	stringstream ss;
-	ss << "Zombie Normal ZO\nHP: 150\nDano: 50\nCosto: 50\nAvance: 1 bloque";
+	ss << "Zombie Normal ZO\nHP: 150\nDano: 50\nCosto: 50";
 	return ss.str();
 }
 string Zombie::tostring(){

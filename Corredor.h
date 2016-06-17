@@ -1,16 +1,16 @@
-#include "Planta.h"
+#include "Zombie.h"
 #pragma once
 #include <string>
 
 using std::string;
 
-class Papa : public Planta{
-	int escudo;
+class Corredor : public Zombie{
 public:
-	Papa(int=150,int=200,int=25,int=200);
-	virtual ~Papa();
+	Corredor(int=150,int=200,int=50,int=0);
+	virtual ~Corredor();
 	virtual int ataque();
 	virtual int defensa(int);
+	virtual int move();
 	virtual int getcosto();
 	virtual string descripcion();
 	virtual string tostring();

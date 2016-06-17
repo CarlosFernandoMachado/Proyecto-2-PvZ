@@ -36,7 +36,7 @@ int Cherry::getcosto(){
 }
 string Cherry::descripcion(){
 	stringstream ss;
-	ss << "Cherry CH\nHP: 150\nDano: 150 o 300\nCosto: 200\nSu ataque va alternando";
+	ss << "Cherry CH\nHP: 100\nDano: 50\nCosto: 50";
 	return ss.str();
 }
 string Cherry::tostring(){
