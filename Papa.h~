@@ -7,8 +7,10 @@ using std::string;
 class Papa : public Planta{
 	int escudo;
 public:
-	Papa(int=200,int=100,int=25,int=200);
+	Papa(int=150,int=200,int=25,int=200);
 	virtual ~Papa();
+	virtual int getx();
+	virtual int gety();
 	virtual int ataque();
 	virtual int defensa(int);
 	virtual int getcosto();

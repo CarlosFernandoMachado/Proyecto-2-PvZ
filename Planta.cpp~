@@ -7,14 +7,8 @@
 using std::stringstream;
 using std::string;
 
-Planta::Planta(int x,int y,int costo,int vida,int dano):Padre(x,y,costo,vida,dano){}
+Planta::Planta(int costo,int vida,int dano):Padre(costo,vida,dano){}
 Planta::~Planta(){}
-int Planta::getx(){
-	return x;
-}
-int Planta::gety(){
-	return y;
-}
 int Planta::ataque(){
 	return dano;
 }

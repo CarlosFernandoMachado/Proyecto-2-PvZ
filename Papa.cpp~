@@ -7,7 +7,7 @@
 using std::stringstream;
 using std::string;
 
-Papa::Papa(int costo,int vida,int dano,int escudo):Planta(costo,vida,dano),escudo(escudo){}
+Papa::Papa(int x,int y,int costo,int vida,int dano,int escudo):Planta(x,y,costo,vida,dano),escudo(escudo){}
 Papa::~Papa(){}
 int Papa::ataque(){
 	return dano;
@@ -39,7 +39,7 @@ int Papa::getcosto(){
 }
 string Papa::descripcion(){
 	stringstream ss;
-	ss << "Papa PA\nHP: 200\nDano: 25\nCosto: 150\nEscudo: 200";
+	ss << "Papa PA\nHP: 200\nDano: 25\nCosto: 150\nEscudo: 200\nEscudo bloquea dano";
 	return ss.str();
 }
 string Papa::tostring(){

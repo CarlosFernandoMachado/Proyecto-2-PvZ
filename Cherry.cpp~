@@ -7,7 +7,7 @@
 using std::stringstream;
 using std::string;
 
-Cherry::Cherry(int costo,int vida,int dano,bool doubledmg):Planta(costo,vida,dano),doubledmg(doubledmg){}
+Cherry::Cherry(int x,int y,int costo,int vida,int dano,bool doubledmg):Planta(x,y,costo,vida,dano),doubledmg(doubledmg){}
 Cherry::~Cherry(){}
 int Cherry::ataque(){
 	if(doubledmg){
@@ -36,7 +36,7 @@ int Cherry::getcosto(){
 }
 string Cherry::descripcion(){
 	stringstream ss;
-	ss << "Cherry CH\nHP: 100\nDano: 50\nCosto: 50";
+	ss << "Cherry CH\nHP: 150\nDano: 150 o 300\nCosto: 200\nSu ataque va alternando";
 	return ss.str();
 }
 string Cherry::tostring(){

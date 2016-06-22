@@ -7,8 +7,14 @@
 using std::stringstream;
 using std::string;
 
-Cherry::Cherry(int costo,int vida,int dano,bool doubledmg):Planta(costo,vida,dano),doubledmg(doubledmg){}
+Cherry::Cherry(int x,int y,int costo,int vida,int dano,bool doubledmg):Planta(x,y,costo,vida,dano),doubledmg(doubledmg){}
 Cherry::~Cherry(){}
+int Cherry::getx(){
+	return x;
+}
+int Cherry::gety(){
+	return y;
+}
 int Cherry::ataque(){
 	if(doubledmg){
 		doubledmg = false;

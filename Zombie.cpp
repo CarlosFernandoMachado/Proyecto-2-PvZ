@@ -7,8 +7,17 @@
 using std::stringstream;
 using std::string;
 
-Zombie::Zombie(int costo,int vida,int dano,int avanzar):Padre(costo,vida,dano),avanzar(avanzar){}
+Zombie::Zombie(int x,int y,int costo,int vida,int dano,int avanzar):Padre(x,y,costo,vida,dano),avanzar(avanzar){}
 Zombie::~Zombie(){}
+int Zombie::getx(){
+	return x;
+}
+int Zombie::gety(){
+	return y;
+}
+void Zombie::setx(int x){
+	this->x = x;
+}
 int Zombie::ataque(){
 	return dano;
 }

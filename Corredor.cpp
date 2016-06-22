@@ -7,8 +7,17 @@
 using std::stringstream;
 using std::string;
 
-Corredor::Corredor(int costo,int vida,int dano,int avanzar):Zombie(costo,vida,dano,avanzar){}
+Corredor::Corredor(int x,int y,int costo,int vida,int dano,int avanzar):Zombie(x,y,costo,vida,dano,avanzar){}
 Corredor::~Corredor(){}
+int Corredor::getx(){
+	return x;
+}
+int Corredor::gety(){
+	return y;
+}
+void Corredor::setx(int x){
+	this->x = x;
+}
 int Corredor::ataque(){
 	return dano;
 }

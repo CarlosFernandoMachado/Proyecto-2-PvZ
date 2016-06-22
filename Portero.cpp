@@ -1,4 +1,5 @@
 #include "Portero.h"
+#include "Zombie.h"
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -6,8 +7,17 @@
 using std::stringstream;
 using std::string;
 
-Portero::Portero(int costo,int vida,int dano,int avanzar,int casco):Zombie(costo,vida,dano,avanzar),casco(casco){}
+Portero::Portero(int x,int y,int costo,int vida,int dano,int avanzar,int casco):Zombie(x,y,costo,vida,dano,avanzar),casco(casco){}
 Portero::~Portero(){}
+int Portero::getx(){
+	return x;
+}
+int Portero::gety(){
+	return y;
+}
+void Portero::setx(int x){
+	this->x = x;
+}
 int Portero::ataque(){
 	return dano;
 }

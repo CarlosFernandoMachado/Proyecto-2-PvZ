@@ -1,0 +1,20 @@
+#include <string>
+#include <ncurses.h>
+#include <vector>
+
+using std::vector;
+using std::string;
+
+int main(int argc, char*argv[]){
+	initscr();
+	string a = "dope";
+	char text[] = a.c_str();
+	a = "dawg";
+	text = a.c_str();
+	addstr(text);
+	refresh();
+	getch();
+	endwin();
+	return 0;
+}
+

@@ -7,7 +7,7 @@ class Padre{
 protected:
 	int x,y,costo,vida,dano;
 public:
-	Padre(int,int,int,int,int);
+	Padre(int,int,int);
 	virtual ~Padre();
 	virtual int getx()=0;
 	virtual int gety()=0;

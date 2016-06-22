@@ -7,8 +7,14 @@
 using std::stringstream;
 using std::string;
 
-Papa::Papa(int costo,int vida,int dano,int escudo):Planta(costo,vida,dano),escudo(escudo){}
+Papa::Papa(int x,int y,int costo,int vida,int dano,int escudo):Planta(x,y,costo,vida,dano),escudo(escudo){}
 Papa::~Papa(){}
+int Papa::getx(){
+	return x;
+}
+int Papa::gety(){
+	return y;
+}
 int Papa::ataque(){
 	return dano;
 }
