@@ -17,8 +17,7 @@ using std::ofstream;
 using std::ifstream;
 using std::vector;
 using std::string;
-using std::ios;
-using namespace std;
+
 int ataqueplantas(vector<Padre*>&);
 int ataquezombies(vector<Padre*>&);
 void imprimirtablero(vector<Padre*>&);
@@ -392,7 +391,7 @@ int main(int argc, char*argv[]){
 	getch();
 	endwin();
 	return 0;
-}/*
+}
 void guardarArchivo(vector<Padre*> tablero){
 	FILE *guardarpartida;
 	guardarpartida = fopen("planta.bin","w");
@@ -444,12 +443,13 @@ void guardarArchivo(vector<Padre*> tablero){
 	}
 	fclose(guardarpartida);
 }
-void leerArchivo(vector<Padre*> tablero){
+void leerArchivo(vector<Padre*> tablero){/*
 	FILE  *leerpartida;
 	leerpartida = fopen("planta.bin","r");
 	fread(planta,sizeof(Planta),1,leerpartida);
-	fclose(leerpartida);
-}*/
+	fclose(leerpartida);*/
+}
+/*
 void guardarArchivo(vector<Padre*>& tablero){
 	char filename1[20] = "planta.bin";
 	ofstream output(filename1, ios::binary);
@@ -543,7 +543,7 @@ void leerArchivo(vector<Padre*>& tablero){
 	while (input.read(reinterpret_cast<char*>(&portero), sizeof(Portero)))
 		tablero.push_back(&portero);
 	input.close();
-}
+}*/
 void movezombies(vector<Padre*>& tablero){
 	int newx = 0;
 	for (int i = 0; i < tablero.size(); i++){
